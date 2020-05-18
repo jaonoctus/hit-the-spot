@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>PROTOTYPE - hit the right spot</title>
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <script src="https://vuejs.org/js/vue.js"></script>
+    <style>
+      #app, .canvas {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .cursor-pointer {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      <h3>instructions</h3>
+      <ul style="list-style-type: square;">
+        <li>to add an answer, click anywhere on the "cms" image</li>
+        <li>to remove an answer, click on any coordinate below</li>
+        <li>to "play" the game, click anywhere on the "device" image</li>
+      </ul>
+      <hr/>
+    </p>
+    <div id="app"></div>
+
+    <script type="module">
+      import app from './app.mjs'
+
+      app()
+    </script>
+  </body>
+</html>
